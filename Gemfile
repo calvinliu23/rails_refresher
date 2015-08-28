@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -11,9 +12,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -23,18 +21,35 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# all of learn rails gem
+# 
+#helps to use Rails without a database
+gem 'activerecord-tableless'
+#configuration framework
+gem 'figaro'
+# Access to the Mail Chimp API
+gem 'gibbon'
+# use Google Drive spreadsheets for data storage
+gem 'google_drive'
+# For static pages like "about"
+gem 'high_voltage'
+#Forms made easy
+gem 'simple_form'
+# Support for Zurb Foundation
+gem 'compass-rails'
+# Front-end Framework
+gem 'zurb-foundation'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  # helps when things go wrong
+	gem 'better_errors'
+	# supprress distracting messages in the log
+	gem 'quiet_assets'
+	#generates files for an application layout
+	gem 'rails_layout'
 end
 
 group :development do
