@@ -35,8 +35,7 @@ gem 'google_drive'
 gem 'high_voltage'
 #Forms made easy
 gem 'simple_form'
-# Support for Zurb Foundation
-gem 'compass-rails'
+
 # Front-end Framework
 gem 'zurb-foundation'
 
