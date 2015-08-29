@@ -35,7 +35,6 @@ gem 'google_drive'
 gem 'high_voltage'
 #Forms made easy
 gem 'simple_form'
-
 # Front-end Framework
 gem 'zurb-foundation'
 
